@@ -1,0 +1,16 @@
+function loadDashboard() {
+  document.getElementById('welcome').classList.add('hidden');
+  document.getElementById('dashboard').classList.remove('hidden');
+}
+
+function startLesson(topic) {
+  alert(`Starting lesson for ${topic}!`);
+  // Simulate AI recommendations
+  document.getElementById('recommendations').innerHTML = `
+    <h3>Recommended Resources:</h3>
+    <ul>
+      <li><a href="#" target="_blank">${topic} Tutorial 1</a></li>
+      <li><a href="#" target="_blank">${topic} Tutorial 2</a></li>
+    </ul>
+  `;
+}
